@@ -401,11 +401,12 @@ body {
   padding: 16px 32px;
   border-radius: 4px;
   border: 1px solid var(--subtitel-text);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-icon {
   fill: var(--subtitel-text);
-
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /*   
   width: 168px;
   height: 88px; */
@@ -526,9 +527,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.modal-btn-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .close-button:hover,
 .close-button:focus,
 .close-button:active,
